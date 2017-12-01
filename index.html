@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/nv.d3.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- import js Library -->
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/corechart.js"></script>
+  <script type="text/javascript" src="js/linechart.js"></script>
+
+</head>
+
+<body>
+  <!-- Extended Navbar with Tabs -->
+  <nav class="nav-extended blue-grey darken-4">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">sensor-data-view</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="page1.html">button1</a></li>
+        <li><a href="page2.html">button2</a></li>
+        <li><a href="page3.html">button3</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="page1.html">button1</a></li>
+        <li><a href="page2.html">button2</a></li>
+        <li><a href="page3.html">button3</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="#tab1">Tab 1</a></li>
+        <li class="tab"><a href="#tab2">Tab 2</a></li>
+        <li class="tab disabled"><a href="#tab3">Disabled Tab</a></li>
+        <li class="tab"><a href="#tab4">Tab 4</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Extended Navbar CONTENT -->
+  <!-- TAB1 -->
+  <div id="tab1" class="col s12">
+    <p>Tab 1</p>
+    <div class="row">
+        <div class="col s4 m6">
+          <div class="card">
+            <div class="card-content blue-grey-text">
+              <span class="card-title">Core Chart</span>
+              <div id="corechart"></div>
+            </div>
+            <div class="card-action">
+              <a href="#" class="blue-text">This is a link</a>
+              <a href="#" class="blue-text">This is a link</a>
+            </div>
+          </div><!-- ./card -->
+        </div><!-- ./col s6 m6 -->
+
+        <div class="col s4 m6">
+          <div class="card">
+            <div class="card-content blue-grey-text">
+              <span class="card-title">Line Chart</span>
+              <div id="linechart"></div>
+            </div>
+            <div class="card-action">
+              <a href="#" class="blue-text">This is a link</a>
+              <a href="#" class="blue-text">This is a link</a>
+            </div>
+          </div><!-- ./card -->
+        </div><!-- ./col s6 m6 -->
+
+      </div><!-- ./row -->
+  </div>
+  <!-- TAB2 -->
+  <div id="tab2" class="col s12">
+    <p>Tab 2</p>
+  </div>
+  <!-- TAB3 -->
+  <div id="tab3" class="col s12">
+    <p>Tab 3</p>
+  </div>
+  <!-- TAB4 -->
+  <div id="tab4" class="col s12">
+    <p>Tab 4</p>
+  </div>
+
+
+  <!-- Horizontal FAB -->
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
