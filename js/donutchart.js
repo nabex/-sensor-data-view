@@ -11,7 +11,7 @@ google.charts.load("current", {packages:["corechart"]});
         ]);
 
         var options = {
-          title: 'My Daily Activities',
+          title: '',
           pieHole: 0.4,
         };
 
